@@ -32,9 +32,6 @@
             button2 = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
-            kisiismi = new DataGridViewTextBoxColumn();
-            kisisoyismi = new DataGridViewTextBoxColumn();
-            kisinumarası = new DataGridViewTextBoxColumn();
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -75,33 +72,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { kisiismi, kisisoyismi, kisinumarası });
             dataGridView1.Location = new Point(309, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(427, 231);
             dataGridView1.TabIndex = 3;
-            // 
-            // kisiismi
-            // 
-            kisiismi.HeaderText = "Kisi İsmi";
-            kisiismi.MinimumWidth = 6;
-            kisiismi.Name = "kisiismi";
-            kisiismi.Width = 125;
-            // 
-            // kisisoyismi
-            // 
-            kisisoyismi.HeaderText = "Kisi Soyismi";
-            kisisoyismi.MinimumWidth = 6;
-            kisisoyismi.Name = "kisisoyismi";
-            kisisoyismi.Width = 125;
-            // 
-            // kisinumarası
-            // 
-            kisinumarası.HeaderText = "Kisi Numarası";
-            kisinumarası.MinimumWidth = 6;
-            kisinumarası.Name = "kisinumarası";
-            kisinumarası.Width = 125;
             // 
             // label1
             // 
@@ -179,9 +154,6 @@
         private Button button2;
         private Button button3;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn kisiismi;
-        private DataGridViewTextBoxColumn kisisoyismi;
-        private DataGridViewTextBoxColumn kisinumarası;
         private Label label1;
         private TextBox textBox1;
         private Label label2;
