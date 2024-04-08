@@ -32,9 +32,6 @@
             sil = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
-            aldıgıtarih = new DataGridViewTextBoxColumn();
-            teslimtarihi = new DataGridViewTextBoxColumn();
-            geçkalmagünü = new DataGridViewTextBoxColumn();
             textBox1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -52,6 +49,7 @@
             e.TabIndex = 0;
             e.Text = "ekle";
             e.UseVisualStyleBackColor = true;
+            e.Click += e_Click;
             // 
             // sil
             // 
@@ -70,38 +68,15 @@
             button3.TabIndex = 2;
             button3.Text = "güncelle";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { aldıgıtarih, teslimtarihi, geçkalmagünü });
             dataGridView1.Location = new Point(381, 1);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(426, 205);
             dataGridView1.TabIndex = 3;
-            // 
-            // aldıgıtarih
-            // 
-            aldıgıtarih.HeaderText = "Aldığı Tarih";
-            aldıgıtarih.MinimumWidth = 6;
-            aldıgıtarih.Name = "aldıgıtarih";
-            aldıgıtarih.Width = 125;
-            // 
-            // teslimtarihi
-            // 
-            teslimtarihi.HeaderText = "Teslim Tarihi";
-            teslimtarihi.MinimumWidth = 6;
-            teslimtarihi.Name = "teslimtarihi";
-            teslimtarihi.Width = 125;
-            // 
-            // geçkalmagünü
-            // 
-            geçkalmagünü.HeaderText = "Geç Kalma Günü";
-            geçkalmagünü.MinimumWidth = 6;
-            geçkalmagünü.Name = "geçkalmagünü";
-            geçkalmagünü.Width = 125;
             // 
             // textBox1
             // 
@@ -179,9 +154,6 @@
         private Button sil;
         private Button button3;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn aldıgıtarih;
-        private DataGridViewTextBoxColumn teslimtarihi;
-        private DataGridViewTextBoxColumn geçkalmagünü;
         private TextBox textBox1;
         private Label label1;
         private Label label2;
