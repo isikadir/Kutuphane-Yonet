@@ -21,8 +21,8 @@ namespace Kütüphane_Yönet
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Kitaplar kitaplar = new Kitaplar();
-            kitaplar.Show();
+            var kitap = new kitaplar();
+            kitap.Show();
 
         }
 
